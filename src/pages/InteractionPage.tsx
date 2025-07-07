@@ -1,6 +1,5 @@
 import { Link } from "react-router";
-
-const basics = [{ path: "lifting-state-up", name: "1.Lifting State Up" }];
+import { interactionsRoutes } from "../data/data";
 
 export function InteractionsPage() {
   return (
@@ -8,7 +7,7 @@ export function InteractionsPage() {
       <h2 className="text-2xl font-bold mb-4">React Basic Components</h2>
       <h2 className="text-lg font-bold mb-4">2.Interactions</h2>
       <ul className="space-y-2">
-        {basics.map((item) => (
+        {interactionsRoutes.map((item) => (
           <li key={item.path}>
             <Link
               to={`/interactions/${item.path}`}

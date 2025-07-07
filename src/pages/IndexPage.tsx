@@ -1,16 +1,12 @@
 import { Link } from "react-router";
-
-const basics = [
-  { path: "basics", name: "1.Basic" },
-  { path: "interactions", name: "2.Interactions" },
-];
+import { sectionRoutes } from "../data/data";
 
 export function IndexPage() {
   return (
     <div className="p-6">
       <h2 className="text-2xl font-bold mb-4">React Basic Components</h2>
       <ul className="space-y-2">
-        {basics.map((item) => (
+        {sectionRoutes.map((item) => (
           <li key={item.path}>
             <Link
               to={`/${item.path}`}
