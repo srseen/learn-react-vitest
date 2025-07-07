@@ -5,10 +5,11 @@ import { List } from "../components/1.basics/4. ListRendering/ListRendering";
 import { EventHandling } from "../components/1.basics/5.EventHandling/EventHandling";
 import { UseState } from "../components/1.basics/6.UseState/UseState";
 import { InputFormHandling } from "../components/1.basics/7.InputFormHandling/InputFormHandling";
-import { LiftingStateUp } from "../components/2.Interaction/LiftingStateUp";
+import { LiftingStateUp } from "../components/2.Interaction/1.LiftingStateUp/LiftingStateUp";
 import { IndexPage } from "../pages/IndexPage";
 import { BasicsPage } from "../pages/BasicsPage";
 import { InteractionsPage } from "../pages/InteractionPage";
+import { CallbackToParent } from "../components/2.Interaction/2.CallbackToParent/CallbackToParent";
 
 // หัวข้อต่างๆ
 export const sectionRoutes = [
@@ -54,5 +55,10 @@ export const interactionsRoutes = [
     path: "lifting-state-up",
     name: "1.Lifting State Up",
     element: <LiftingStateUp />,
+  },
+  {
+    path: "props-callback",
+    name: "2.Props Callback",
+    element: <CallbackToParent />,
   },
 ];
