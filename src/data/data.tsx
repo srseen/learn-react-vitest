@@ -21,6 +21,7 @@ import { UseEffectWithDependency } from "../components/3.hooks/3.UseEffectWithDe
 import { UseEffectConditional } from "../components/3.hooks/4. UseEffectConditional/UseEffectConditional";
 import { UseMemoBasic } from "../components/3.hooks/5.UseMemo/UseMemoBasic";
 import { UseCallbackBasic } from "../components/3.hooks/6.UseCallback/UseCallbackBasic";
+import { UseWindowWidthExample } from "../components/3.hooks/7.CustomHook/UseWindowWidthExample";
 
 // หัวข้อต่างๆ
 export const sectionRoutes = [
@@ -129,5 +130,10 @@ export const hooksRoutes = [
     path: "useCallback-basic",
     name: "6.UseCallback Basic",
     element: <UseCallbackBasic />,
+  },
+  {
+    path: "custom-hook",
+    name: "7.Custom Hook",
+    element: <UseWindowWidthExample />,
   },
 ];

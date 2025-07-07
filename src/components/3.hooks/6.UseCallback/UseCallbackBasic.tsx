@@ -6,9 +6,13 @@ type ButtonProps = {
   className: string;
 };
 
-const ChildButton = React.memo(({ onClick, label }: ButtonProps) => {
+const ChildButton = React.memo(({ onClick, label, className }: ButtonProps) => {
   console.log("ChildButton rendered");
-  return <button onClick={onClick}>{label}</button>;
+  return (
+    <button className={className} onClick={onClick}>
+      {label}
+    </button>
+  );
 });
 
 export function UseCallbackBasic() {
