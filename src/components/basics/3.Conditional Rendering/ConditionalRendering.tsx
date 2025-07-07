@@ -41,9 +41,7 @@ export function ConditionalPlayground() {
 
   return (
     <div className="p-6 max-w-xl mx-auto space-y-4">
-      <h1 className="text-2xl font-bold">
-        🧪 Conditional Rendering Playground
-      </h1>
+      <h1 className="text-2xl font-bold">Conditional Rendering Playground</h1>
 
       <div className="flex gap-4 flex-wrap">
         <button
