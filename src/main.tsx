@@ -12,21 +12,29 @@ import { EventHandling } from "./components/basics/5.Event Handling/EventHandlin
 import { UseState } from "./components/basics/6.State (useState)/UseState";
 import { InputFormHandling } from "./components/basics/7.Input Form Handling/InputFormHandling";
 
+const basicRoutes = [
+  { path: "", element: <BasicsPage /> },
+  { path: "functional", element: <FunctionalComponent /> },
+  { path: "prop", element: <Prop /> },
+  { path: "conditional", element: <ConditionalPlayground /> },
+  { path: "list", element: <List /> },
+  { path: "event", element: <EventHandling /> },
+  { path: "state", element: <UseState /> },
+  { path: "input", element: <InputFormHandling /> },
+];
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<IndexPage />} />
-        {/* basic routes */}
-        <Route path="/basics" element={<BasicsPage />} />
-        <Route path="/basics/functional" element={<FunctionalComponent />} />
-        <Route path="/basics/prop" element={<Prop />} />
-        <Route path="/basics/conditional" element={<ConditionalPlayground />} />
-        <Route path="/basics/list" element={<List />} />
-        <Route path="/basics/event" element={<EventHandling />} />
-        <Route path="/basics/state" element={<UseState />} />
-        <Route path="/basics/input" element={<InputFormHandling />} />
-        {/* basic routes */}
+        {basicRoutes.map((route) => (
+          <Route
+            key={route.path}
+            path={`/basics/${route.path}`}
+            element={route.element}
+          />
+        ))}
       </Routes>
     </BrowserRouter>
   </StrictMode>
