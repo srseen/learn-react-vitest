@@ -5,7 +5,7 @@ import "./index.css";
 import IndexPage from "./pages/IndexPage";
 import BasicsPage from "./pages/BasicsPage";
 import { FunctionalComponent } from "./components/basics/1.FunctionalComponent/FunctionalComponent";
-import { Prop } from "./components/basics/2.Props/PropsAndChildren";
+import { Prop } from "./components/basics/2.PropsAndChildren/PropsAndChildren";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
