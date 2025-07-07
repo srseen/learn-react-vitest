@@ -10,6 +10,7 @@ import { ConditionalPlayground } from "./components/basics/3.Conditional Renderi
 import { List } from "./components/basics/4. List Rendering/ListRendering";
 import { EventHandling } from "./components/basics/5.Event Handling/EventHandling";
 import { UseState } from "./components/basics/6.State (useState)/UseState";
+import { InputFormHandling } from "./components/basics/7.Input Form Handling/InputFormHandling";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -24,6 +25,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/basics/list" element={<List />} />
         <Route path="/basics/event" element={<EventHandling />} />
         <Route path="/basics/state" element={<UseState />} />
+        <Route path="/basics/input" element={<InputFormHandling />} />
         {/* basic routes */}
       </Routes>
     </BrowserRouter>
