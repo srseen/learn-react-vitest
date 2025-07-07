@@ -5,12 +5,12 @@ const basics = [
   { path: "prop", name: "2.Props" },
   { path: "conditional", name: "3.Conditional Rendering" },
   { path: "list", name: "4.List Rendering" },
-  { path: "event", name: "6.Event Handling" },
-  { path: "state", name: "7.useState" },
-  { path: "input", name: "8.Input Form Handling" },
+  { path: "event", name: "5.Event Handling" },
+  { path: "state", name: "6.useState" },
+  { path: "input", name: "7.Input Form Handling" },
 ];
 
-export default function BasicsPage() {
+export function BasicsPage() {
   return (
     <div className="p-6">
       <h2 className="text-2xl font-bold mb-4">React Basic Components</h2>
