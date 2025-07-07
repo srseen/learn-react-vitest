@@ -3,8 +3,7 @@ import { interactionsRoutes } from "../data/data";
 
 export function InteractionsPage() {
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">React Basic Components</h2>
+    <div className="px-6">
       <h2 className="text-lg font-bold mb-4">2.Interactions</h2>
       <ul className="space-y-2">
         {interactionsRoutes.map((item) => (
