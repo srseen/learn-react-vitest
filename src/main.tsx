@@ -9,6 +9,7 @@ import { Prop } from "./components/basics/2.PropsAndChildren/PropsAndChildren";
 import { ConditionalPlayground } from "./components/basics/3.Conditional Rendering/ConditionalRendering";
 import { List } from "./components/basics/4. List Rendering/ListRendering";
 import { EventHandling } from "./components/basics/5.Event Handling/EventHandling";
+import { UseState } from "./components/basics/6.State (useState)/UseState";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/basics/conditional" element={<ConditionalPlayground />} />
         <Route path="/basics/list" element={<List />} />
         <Route path="/basics/event" element={<EventHandling />} />
+        <Route path="/basics/state" element={<UseState />} />
         {/* basic routes */}
       </Routes>
     </BrowserRouter>
