@@ -10,6 +10,9 @@ import { IndexPage } from "../pages/IndexPage";
 import { BasicsPage } from "../pages/BasicsPage";
 import { InteractionsPage } from "../pages/InteractionPage";
 import { CallbackToParent } from "../components/2.Interaction/2.CallbackToParent/CallbackToParent";
+import { ControlledInput } from "../components/2.Interaction/3.ControlledInput/ControlledInput";
+import { UncontrolledForm } from "../components/2.Interaction/4.UncontrolledForm/UncontrolledForm";
+import { ComponentComposition } from "../components/2.Interaction/5.ComponentComposition/ComponentComposition";
 
 // หัวข้อต่างๆ
 export const sectionRoutes = [
@@ -60,5 +63,20 @@ export const interactionsRoutes = [
     path: "props-callback",
     name: "2.Props Callback",
     element: <CallbackToParent />,
+  },
+  {
+    path: "controlled-input",
+    name: "3.Controlled Input",
+    element: <ControlledInput />,
+  },
+  {
+    path: "uncontrolled-form",
+    name: "4.Uncontrolled Component",
+    element: <UncontrolledForm />,
+  },
+  {
+    path: "component-composition",
+    name: "5.Component Composition",
+    element: <ComponentComposition />,
   },
 ];
