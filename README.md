@@ -15,28 +15,6 @@
 - React Router (Lib React Router DOM)
 - Vitest + React Testing Library
 
-## วิธีใช้งาน
-
-```bash
-npm install
-npm run dev
-npm run test
-```
-
-- Test
-
-```bash
-npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom
-```
-
-## Routes ตัวอย่าง
-
-- /basics/prop
-- /basics/state
-- /hooks/useeffect
-- /interaction/lifting
-- /ui/modal
-
 ## 📁 โครงสร้างตัวอย่าง
 
 ```
@@ -49,4 +27,17 @@ src/
 │   └── ui/
 ├── App.tsx
 ├── main.tsx
+```
+## วิธีใช้งาน
+
+```bash
+npm install
+npm run dev
+npm run test
+```
+
+- Test
+
+```bash
+npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom
 ```
