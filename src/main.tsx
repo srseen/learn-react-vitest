@@ -3,10 +3,12 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import "./index.css";
 import { sectionRoutes, basicsRoutes, interactionsRoutes } from "./data/data";
+import { Header } from "./pages/Header";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
+      <Header />
       <Routes>
         {sectionRoutes.map((route) => (
           <Route
