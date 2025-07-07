@@ -11,6 +11,8 @@ import { List } from "./components/1.basics/4. ListRendering/ListRendering";
 import { EventHandling } from "./components/1.basics/5.EventHandling/EventHandling";
 import { UseState } from "./components/1.basics/6.UseState/UseState";
 import { InputFormHandling } from "./components/1.basics/7.InputFormHandling/InputFormHandling";
+import { InteractionsPage } from "./pages/InteractionPage";
+import { LiftingStateUp } from "./components/2.Interaction/LiftingStateUp";
 
 const basicRoutes = [
   { path: "", element: <BasicsPage /> },
@@ -22,6 +24,10 @@ const basicRoutes = [
   { path: "state", element: <UseState /> },
   { path: "input", element: <InputFormHandling /> },
 ];
+const interactionsRoutes = [
+  { path: "", element: <InteractionsPage /> },
+  { path: "lifting-state-up", element: <LiftingStateUp /> },
+];
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -32,6 +38,13 @@ createRoot(document.getElementById("root")!).render(
           <Route
             key={route.path}
             path={`/basics/${route.path}`}
+            element={route.element}
+          />
+        ))}
+        {interactionsRoutes.map((route) => (
+          <Route
+            key={route.path}
+            path={`/interactions/${route.path}`}
             element={route.element}
           />
         ))}
