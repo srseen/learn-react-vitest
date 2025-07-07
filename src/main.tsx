@@ -4,13 +4,13 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import "./index.css";
 import { IndexPage } from "./pages/IndexPage";
 import { BasicsPage } from "./pages/BasicsPage";
-import { FunctionalComponent } from "./components/basics/1.FunctionalComponent/FunctionalComponent";
-import { Prop } from "./components/basics/2.PropsAndChildren/PropsAndChildren";
-import { ConditionalPlayground } from "./components/basics/3.Conditional Rendering/ConditionalRendering";
-import { List } from "./components/basics/4. List Rendering/ListRendering";
-import { EventHandling } from "./components/basics/5.Event Handling/EventHandling";
-import { UseState } from "./components/basics/6.State (useState)/UseState";
-import { InputFormHandling } from "./components/basics/7.Input Form Handling/InputFormHandling";
+import { FunctionalComponent } from "./components/1.basics/1.FunctionalComponent/FunctionalComponent";
+import { Prop } from "./components/1.basics/2.PropsAndChildren/PropsAndChildren";
+import { ConditionalPlayground } from "./components/1.basics/3.ConditionalRendering/ConditionalRendering";
+import { List } from "./components/1.basics/4. ListRendering/ListRendering";
+import { EventHandling } from "./components/1.basics/5.EventHandling/EventHandling";
+import { UseState } from "./components/1.basics/6.UseState/UseState";
+import { InputFormHandling } from "./components/1.basics/7.InputFormHandling/InputFormHandling";
 
 const basicRoutes = [
   { path: "", element: <BasicsPage /> },
