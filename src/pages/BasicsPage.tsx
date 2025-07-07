@@ -14,7 +14,8 @@ const basics = [
 export default function BasicsPage() {
   return (
     <div className="p-6">
-      <h2 className="text-xl font-bold mb-4">React Basic Components</h2>
+      <h2 className="text-2xl font-bold mb-4">React Basic Components</h2>
+      <h2 className="text-lg font-bold mb-4">Basics</h2>
       <ul className="space-y-2">
         {basics.map((item) => (
           <li key={item.path}>
