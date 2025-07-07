@@ -13,6 +13,7 @@ import { CallbackToParent } from "../components/2.Interaction/2.CallbackToParent
 import { ControlledInput } from "../components/2.Interaction/3.ControlledInput/ControlledInput";
 import { UncontrolledForm } from "../components/2.Interaction/4.UncontrolledForm/UncontrolledForm";
 import { ComponentComposition } from "../components/2.Interaction/5.ComponentComposition/ComponentComposition";
+import { ReusableComponents } from "../components/2.Interaction/6.ReusableComponents/ReusableComponents";
 
 // หัวข้อต่างๆ
 export const sectionRoutes = [
@@ -78,5 +79,10 @@ export const interactionsRoutes = [
     path: "component-composition",
     name: "5.Component Composition",
     element: <ComponentComposition />,
+  },
+  {
+    path: "reusable-components",
+    name: "6.Reusable Components",
+    element: <ReusableComponents />,
   },
 ];
