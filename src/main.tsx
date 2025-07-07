@@ -6,6 +6,7 @@ import IndexPage from "./pages/IndexPage";
 import BasicsPage from "./pages/BasicsPage";
 import { FunctionalComponent } from "./components/basics/1.FunctionalComponent/FunctionalComponent";
 import { Prop } from "./components/basics/2.PropsAndChildren/PropsAndChildren";
+import { ConditionalPlayground } from "./components/basics/3.Conditional Rendering/ConditionalRendering";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/basics" element={<BasicsPage />} />
         <Route path="/basics/functional" element={<FunctionalComponent />} />
         <Route path="/basics/prop" element={<Prop />} />
+        <Route path="/basics/conditional" element={<ConditionalPlayground />} />
         {/* basic routes */}
       </Routes>
     </BrowserRouter>

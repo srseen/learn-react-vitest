@@ -3,8 +3,7 @@ import { Link } from "react-router";
 const basics = [
   { path: "functional", name: "1.Functional Component" },
   { path: "prop", name: "2.Props" },
-  { path: "children", name: "3.Children Prop" },
-  { path: "conditional", name: "4.Conditional Rendering" },
+  { path: "conditional", name: "3.Conditional Rendering" },
   { path: "list", name: "5.List Rendering" },
   { path: "event", name: "6.Event Handling" },
   { path: "state", name: "7.useState" },
