@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { interactionsRoutes } from "../data/data";
+import { interactionsRoutes } from "../data/interactionsRoutes";
 
 export function InteractionsPage() {
   return (

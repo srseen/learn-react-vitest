@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { hooksRoutes } from "../data/data";
+import { hooksRoutes } from "../data/hooksRoutes";
 
 export function HooksPage() {
   return (

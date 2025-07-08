@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { basicsRoutes } from "../data/data";
+import { basicsRoutes } from "../data/basicsRoutes";
 
 export function BasicsPage() {
   return (

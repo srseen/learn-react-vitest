@@ -2,12 +2,10 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import "./index.css";
-import {
-  sectionRoutes,
-  basicsRoutes,
-  interactionsRoutes,
-  hooksRoutes,
-} from "./data/data";
+import { hooksRoutes } from "./data/hooksRoutes";
+import { interactionsRoutes } from "./data/interactionsRoutes";
+import { basicsRoutes } from "./data/basicsRoutes";
+import { sectionRoutes } from "./data/sectionRoutes";
 import { Header } from "./pages/Header";
 
 createRoot(document.getElementById("root")!).render(
