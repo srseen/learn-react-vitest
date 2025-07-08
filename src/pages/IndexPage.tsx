@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { sectionRoutes } from "../data/data";
+import { sectionRoutes } from "../data/sectionRoutes";
 
 export function IndexPage() {
   return (
